@@ -12,7 +12,8 @@ Utilizes [Qdrant vector database](https://qdrant.tech/) within a Docker containe
 4. **Memory Retrieval:** Retrieves related past comments using recent comment's embedding cosine similarities.
 
 ## Installation
-
+- Configure:
+- docker network: `docker network create shared_network`
 - Relocate:
    - `docker-compose.yml`: Launches Ooba server and Qdrant database.
    - `.env`: Specify Docker data persistence locations.
